@@ -1,8 +1,8 @@
-# learn-python
+# Learn-python
 
-#Hello world in python
+Hello world in python
 
-#print("Hello world!")
+print("Hello world!")
 
 #python comments 
 
@@ -15,7 +15,7 @@ i
  comments
 '''
 
-#python block of code simple:
+## Python block of code simple:
 ```
 if 10>5:
      print("this is true")
@@ -24,32 +24,61 @@ if 10>5:
  print("i have no identation")
 ```
 
-# single variable
-# s = "Bob"
-# print(s)
+## single variable
+```
+ s = "Bob"
+ print(s)
+```
 
-#multiple variable 
-# s = "Alice"
-# age = 25
-# city = "new yourk"
-# print(s, age, city)
+## Multiple variable 
+- s = "Alice"
+- age = 25
+- city = "new yourk"
+- print(s, age, city)
 
-# amount = 150.75
-# print("Amount : ${:.2f}".format(amount))
+## Output formatting
+```
+amount = 150.75
+print("Amount : ${:.2f}".format(amount))
+```
 
 
-#input
+## Python input
+```
 name = input("Enter your name:")
 print("Hello", name, "Welcome!")
+```
 
 
-#rules of variable
-#variable names can only contain letters, digit and underscors(_)
-#a variable name cannot start with a digit.
-#variable names are case-sensitive (myVar and myvar are different)
-#avoid using python kewords
+## Rules of variable
+- variable names can only contain letters, digit and underscors(_)
+- a variable name cannot start with a digit.
+- variable names are case-sensitive (myVar and myvar are different)
+- avoid using python kewords
 
-# two type declare a variable
-# local 
-# global
+## Two type declare a variable
+- local 
+- global
 
+## Local variable 
+```
+def f():
+  a = "I am local"
+  print(a)
+f()
+
+```
+
+## Global variable
+```
+def f():
+  global a 
+  a = "modifed global"
+  print(a)
+
+f()
+print(a)
+```
+
+## Types operator in python
+- Arithmatic Operator
