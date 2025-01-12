@@ -81,4 +81,10 @@ print(a)
 ```
 
 ## Types operator in python
-- Arithmatic Operator
+- Arithmatic Operator ( +, -, *, /, %)
+- Comparison Operator ( <, >, ==, != )
+- Logical Operator (AND, NOT, OR)
+- Bitwise Operator (&, |, <<, >> )
+- Assignment Operator (=, +=, -=, *=, %=)
+
+
