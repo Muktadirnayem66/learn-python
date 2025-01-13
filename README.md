@@ -87,4 +87,35 @@ print(a)
 - Bitwise Operator (&, |, <<, >> )
 - Assignment Operator (=, +=, -=, *=, %=)
 
+## Nested if..else condition statement
+```
+age = 70
+is_number = True
+
+if age >= 60:
+  if is_number:
+    print('30% senior discount')
+  else:
+      print('20% senior discount')
+else:
+  print('Not eligible for a senior discount.')
+```
+
+## range loop
+
+```
+for i in range(0,10,2):
+  print(i)
+```
+
+## while loop
+
+```
+count = 0
+while (count < 3):
+  count = count + 1
+  print("Hello world!")
+```
+
+
 
