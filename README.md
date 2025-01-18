@@ -129,5 +129,20 @@ def factorial(n):
 print(factorial(5))
 
 ```
+## Python usages self as argument
 
+```
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+  
+  def display(self):
+    return self.brand, self.model
+
+car1 = Car("Toyota", "abc1")
+
+print(car1.display())
+
+```
 
