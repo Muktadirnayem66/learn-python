@@ -146,3 +146,56 @@ print(car1.display())
 
 ```
 
+## python oop concept
+
+```
+# single inheritance
+
+class Dog:
+  def __init__(self, name):
+    self.name = name
+
+  def display_name(self):
+    print(f"Dog's name {self.name}")
+  
+  #single inheritance
+class Labrador(Dog):
+  def Sound(self):
+    print("Labrador woof")
+
+ #multilevel inheritance
+
+class GuideDog(Labrador):
+  def guide(self):
+    print(f"{self.name} Guides the way!")
+
+# multiple inheritance
+
+class Friendly:
+  def greet(self):
+    print("Friendly!")
+  
+class GoldenRetriver(Dog, Friendly):
+  def sound(self):
+    print("Golden Retrirver Barks")
+
+  #single inheritance
+  lab = Labrador("Buddy")
+  lab.display_name()
+  lab.Sound()
+
+
+# multilevel inheritance
+  guide_dog = GuideDog("Max")
+  guide_dog.display_name()
+  guide_dog.guide()
+
+# multiple inheritance
+retriver = GoldenRetriver("Charlier")
+retriver.display_name()
+retriver.greet()
+retriver.sound()
+```
+
+
+
