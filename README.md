@@ -197,5 +197,73 @@ retriver.greet()
 retriver.sound()
 ```
 
+## python encapsulation
+
+```
+class Dog:
+  def __init__(self, name, bread, age):
+    self.name = name
+    self._bread = bread
+    self._age = age
+
+
+  def get_info(self):
+    return f"Name: {self.name}, Bread {self._bread}, Age:{self._age}"
+
+  def get_age(self):
+      return self._age
+  
+  def set_age(self, age):
+      if age > 0:
+         self._age = age
+      else:
+        print("Invalid age!")
+
+dog = Dog("Buddy", "Labrador", 3)
+
+print(dog.name)
+print(dog._bread)
+print(dog.get_info())
+print(dog.get_age())
+dog.set_age(10)
+print(dog.get_info())
+
+
+```
+
+
+## python abstraction
+
+```
+from abc import ABC, abstractmethod
+
+class Dog(ABC):
+  def __init__(self, name):
+    self.name = name
+
+  @abstractmethod
+  def sound(self):
+    pass
+
+  def display_name(self):
+    print(f"Dogs Name {self.name}")
+  
+class Labrador(Dog):
+    def sound(self):
+      print("Labrador woolf")
+
+class Beagle(Dog):
+  def sound(self):
+    print("Beagle Bark!")
+
+# Example Usage
+dogs = [Labrador("Buddy"), Beagle("Charlie")]
+for dog in dogs:
+    dog.display_name()  
+    dog.sound()  
+
+
+```
+
 
 
